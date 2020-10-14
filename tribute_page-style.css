@@ -1,3 +1,4 @@
+/* Styling for the elements in html that are within <main> tag. */
 #main {
   background-color: #c4dfe6;
   margin:15px auto;
@@ -8,6 +9,19 @@
   width:800px;
     }
 
+/* Change the margin according to device width */
+@media (max-width: 500px) {
+  #main {
+    margin: 0;
+  }
+
+}
+
+/*
+    General styling for header elements
+      - Contains h2 element
+      - Contains p element
+*/
 header {
   text-align: center;
   color:#3B1493;
@@ -16,12 +30,21 @@ header {
   padding:5px 12px;
 
       }
-
+/* Style change for h2 element */
 h2 {
   font-family: Chonburi;
   letter-spacing: 2px;
+  font-size: 28px;
   }
 
+/* Changes the size with respect to device width */
+@media (max-width: 500px) {
+  h2 {
+    font-size: 18px;
+    }
+  }
+
+/* Changes the p element within the header tag */
 #opener {
   font-family: Raleway;
   font-size: 20px;
@@ -29,6 +52,15 @@ h2 {
   color: white;
 }
 
+/* Change style as per device width */
+@media (max-width: 500px) {
+  #opener {
+    font-size: 14px;
+  }
+
+}
+
+/* Change style for all the h3 element */
 h3 {
   text-align: center;
   font-family: Aldrich;
@@ -38,43 +70,59 @@ h3 {
   margin:5px -13px;
   border-radius: 10px;
   padding:7px 0px;
-  /* border-style: solid; */
+  /*
+  border-style: solid;
+    --> Commenting this out makes the border disappear
+    --> This changes the styling to appear differently  */
   border-color: #6C9314;
   background-color: white;
-}
+  }
 
+/* Changes the font and spacing for all the p element unless over-ridden */
 p {
   font-family: ZCOOL XiaoWei;
   letter-spacing: 1px;
-}
+  }
 
+/* Styling for the actual image to appear center */
 #image {
   max-width: 100%;
-
   display: block;
   height: auto;
   margin: 0 auto;
-  padding-top: 4px;
+  }
 
-}
-
+/* A box to hold the image within that has few styles applied */
 #img-div {
   background: gray;
-  /* #D0EF89 */
+      /* #D0EF89 */
   padding: 16px 10px;
-  margin: 16px auto;
-  width:620px;
   border-radius: 7px;
-}
+  }
 
+/* Provides caption to the embedded picture */
 #img-caption {
-  margin: 5px auto;
-  width:600px;
+  margin: 15px 0 5px 0;
   color:white;
-  padding: 4px 0;
-  font-weight: italic;
+  font-style: italic;
+  font-size: 18px;
+  }
+/*
+  Change the caption to fit in the window with respect to picture (or image)
+      -- Makes the appearance different according to device width
+*/
+@media (max-width: 500px) {
+  #img-caption {
+    font-size:13px;
+  }
+
 }
 
+/*
+    Style for the timeline content
+    --> Contains content for background information (h3 element)
+    --> Contains content for career highlight (h3 element)
+ */
 #tribute-info {
   font-family: ZCOOL XiaoWei;
   font-weight:400;
@@ -83,11 +131,17 @@ p {
 
 }
 
+/* Positioning of the vertical line for the content of h3 elements
+    --> Makes sure the vertical line is at the right place
+        and the whole Page
+*/
 .timeline {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
 }
+
+/* the actual vertical line */
 .timeline::after {
   content: "";
   position:absolute;
@@ -98,11 +152,21 @@ p {
   left:2.5%;
   margin-left: -5px;
 }
-.container {
-  position: relative
 
+/* Changes the vertical line according to the device width */
+@media (max-width: 500px) {
+  .timeline::after {
+    margin-left: -5px;
+  }
 
 }
+
+/* Positioning of the custom made circle bullet with respect to content */
+.container {
+  position: relative
+  }
+
+/* The actual circle bullet like style */
 .container::after {
   content: "";
   position: absolute;
@@ -116,23 +180,37 @@ p {
   /* padding:2px auto; */
   z-index: 1;
 }
+
+/* Changes the position of the circle as per viewport */
+@media (max-width: 500px) {
+  .container::after {
+    margin-left: 2.5px;
+  }
+
+}
+
+/* style for the content which is held by h3 element */
 .content {
   position: relative;
   padding: 0px 15px 0px 28px;
 }
 
+/* Styles the horizontal line that covers blockquote */
 hr {
   border-color: #F27DCA;
   width: 100%;
   border-width: 2.2px;
   border-radius: 78%;
 }
+
+/* Style for quotations */
 blockquote {
   font-family: Berkshire Swash;
   line-height: 1.4;
   padding: 4px;
   margin:0 auto;
 }
+
 #quote {
   text-indent: 180px;
   line-height: 0.2;
@@ -140,10 +218,21 @@ blockquote {
 
 }
 
-footer {
+/* Styles the footer element */
+#tribute-link {
   color:#000;
-  background-color: #46B3B9;
+  background-color: #659A8C;
   margin:15px -12px -10px -12px;
   padding:5px 12px;
   font-family: Changa;
+}
+
+/* Change style for text link inside footer element */
+a {
+  color:#CBDD19;
+}
+
+/* Change style if the link is clicked */
+a:visited {
+  color: orange;
 }
