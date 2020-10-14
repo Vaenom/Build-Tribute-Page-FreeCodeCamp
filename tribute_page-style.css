@@ -1,0 +1,149 @@
+#main {
+  background-color: #c4dfe6;
+  margin:15px auto;
+  border-radius: 10px;
+  padding:5px 12px;
+  text-align: justify;
+  max-width: 100%;
+  width:800px;
+    }
+
+header {
+  text-align: center;
+  color:#3B1493;
+  background-color: #46B3B9;
+  margin:15px -12px;
+  padding:5px 12px;
+
+      }
+
+h2 {
+  font-family: Chonburi;
+  letter-spacing: 2px;
+  }
+
+#opener {
+  font-family: Raleway;
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  font-family: Aldrich;
+  font-size: 20px;
+  font-weight:bolder;
+  letter-spacing: 1.5px;
+  margin:5px -13px;
+  border-radius: 10px;
+  padding:7px 0px;
+  /* border-style: solid; */
+  border-color: #6C9314;
+  background-color: white;
+}
+
+p {
+  font-family: ZCOOL XiaoWei;
+  letter-spacing: 1px;
+}
+
+#image {
+  max-width: 100%;
+
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 4px;
+
+}
+
+#img-div {
+  background: gray;
+  /* #D0EF89 */
+  padding: 16px 10px;
+  margin: 16px auto;
+  width:620px;
+  border-radius: 7px;
+}
+
+#img-caption {
+  margin: 5px auto;
+  width:600px;
+  color:white;
+  padding: 4px 0;
+  font-weight: italic;
+}
+
+#tribute-info {
+  font-family: ZCOOL XiaoWei;
+  font-weight:400;
+  font-size: 17px;
+  line-height: 1.4;
+
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.timeline::after {
+  content: "";
+  position:absolute;
+  width:4px;
+  background-color: orange;
+  top: 0;
+  bottom:0;
+  left:2.5%;
+  margin-left: -5px;
+}
+.container {
+  position: relative
+
+
+}
+.container::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border: 2px solid blue;
+  top: 6px;
+  border-radius: 50%;
+  margin-left: 11.5px;
+  /* padding:2px auto; */
+  z-index: 1;
+}
+.content {
+  position: relative;
+  padding: 0px 15px 0px 28px;
+}
+
+hr {
+  border-color: #F27DCA;
+  width: 100%;
+  border-width: 2.2px;
+  border-radius: 78%;
+}
+blockquote {
+  font-family: Berkshire Swash;
+  line-height: 1.4;
+  padding: 4px;
+  margin:0 auto;
+}
+#quote {
+  text-indent: 180px;
+  line-height: 0.2;
+  font-family: Berkshire Swash;
+
+}
+
+footer {
+  color:#000;
+  background-color: #46B3B9;
+  margin:15px -12px -10px -12px;
+  padding:5px 12px;
+  font-family: Changa;
+}
